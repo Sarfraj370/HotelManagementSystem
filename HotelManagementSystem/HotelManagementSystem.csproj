@@ -191,15 +191,18 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Areas\Deshboard\Controllers\AccomodationPackagesController.cs" />
+    <Compile Include="Areas\Deshboard\Controllers\AccomodationsController.cs" />
     <Compile Include="Areas\Deshboard\Controllers\AccomodationTypesController.cs" />
     <Compile Include="Areas\Deshboard\Controllers\DeshboardController.cs" />
+    <Compile Include="Areas\Deshboard\Controllers\UsersController.cs" />
     <Compile Include="Areas\Deshboard\DeshboardAreaRegistration.cs" />
     <Compile Include="Areas\Deshboard\ViewModels\AccomodationPackagesViewModels.cs" />
+    <Compile Include="Areas\Deshboard\ViewModels\AccomodationsViewModels.cs" />
     <Compile Include="Areas\Deshboard\ViewModels\AccomodationTypesListingModel.cs" />
+    <Compile Include="Areas\Deshboard\ViewModels\UsersViewModels.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -265,6 +268,15 @@
     <Content Include="Areas\Deshboard\Views\AccomodationPackages\_Action.cshtml" />
     <Content Include="Areas\Deshboard\Views\AccomodationPackages\_Listing.cshtml" />
     <Content Include="Areas\Deshboard\Views\AccomodationPackages\_Delete.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Accomodations\Index.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Accomodations\_Listing.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Accomodations\_Action.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Accomodations\_Delete.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Users\Index.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Users\_Action.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Users\_Delete.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Users\_Listing.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Users\_UsresRoles.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -314,6 +326,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Deshboard\Models\" />
+    <Folder Include="Views\Accomodations\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
