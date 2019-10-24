@@ -24,8 +24,27 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+
+                    @if (!User.Identity.IsAuthenticated)
+
+                    {
+
+                        <li><a href="@Url.Action("Register", "Account")">Register</a></li>
+
+                        <li><a href="@Url.Action("Login", "Account")">Login</a></li>
+
+                    }
+
+                    else
+
+                    {
+
+                        <li><a href="@Url.Action("Index", "Manage")">Hi! @User.Identity.Name</a></li>
+
+                    }
+
                 </ul>
-                @Html.Partial("_LoginPartial")
             </div>
         </div>
     </div>
