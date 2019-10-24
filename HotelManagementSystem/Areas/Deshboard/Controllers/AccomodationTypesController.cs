@@ -72,5 +72,32 @@ namespace HotelManagementSystem.Areas.Deshboard.Controllers
             return json;
         }
 
+
+        [HttpGet]
+        public ActionResult Delete(int ID)
+        {
+           AccomodationTypeActionModel model = new AccomodationTypeActionModel();
+           var accomodationType = accomodationTypesService.GetAccomodationTypeByID(ID);
+           model.ID = accomodationType.ID;
+            return PartialView("_Delete", model);
+        }
+
+        [HttpPost]
+        public JsonResult Delete(AccomodationTypeActionModel model)
+        {
+            JsonResult json = new JsonResult();
+            var result = false;
+            var accomodationType = accomodationTypesService.GetAccomodationTypeByID(model.ID);
+            result = accomodationTypesService.DeleteAccomodationType(accomodationType);
+            if (result)
+            {
+                json.Data = new { Success = true };
+            }
+            else
+            {
+                json.Data = new { Success = false, Message = "Unable to perform action on Accomodation Types." };
+            }
+            return json;
+        }
     }
 }
