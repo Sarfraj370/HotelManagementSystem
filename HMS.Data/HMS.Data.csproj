@@ -59,6 +59,10 @@
     <Compile Include="Migrations\201910231355466_Basicentities.Designer.cs">
       <DependentUpon>201910231355466_Basicentities.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201910241355338_userproperty.cs" />
+    <Compile Include="Migrations\201910241355338_userproperty.Designer.cs">
+      <DependentUpon>201910241355338_userproperty.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -75,6 +79,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201910231355466_Basicentities.resx">
       <DependentUpon>201910231355466_Basicentities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201910241355338_userproperty.resx">
+      <DependentUpon>201910241355338_userproperty.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

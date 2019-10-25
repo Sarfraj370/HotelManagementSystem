@@ -62,7 +62,7 @@ namespace HotelManagementSystem.Areas.Deshboard.ViewModels
 
         public string UserID { get; set; }
 
-
+        public string Name { get; set; }
 
         public IEnumerable<IdentityRole> UserRoles { get; set; }
 

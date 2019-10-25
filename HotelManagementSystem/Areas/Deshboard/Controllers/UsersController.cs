@@ -101,17 +101,17 @@ namespace HotelManagementSystem.Areas.Deshboard.Controllers
 
 
 
-        //public UsersController(HMSUserManager userManager, HMSSignInManager signInManager, HMSRoleManager roleManager)
+        public UsersController(HMSUserManager userManager, HMSSignInManager signInManager, HMSRoleManager roleManager)
 
-        //{
+        {
 
-        //    UserManager = userManager;
+            UserManager = userManager;
 
-        //    SignInManager = signInManager;
+            SignInManager = signInManager;
 
-        //    RoleManager = roleManager;
+            RoleManager = roleManager;
 
-        //}
+        }
 
 
 
@@ -446,7 +446,7 @@ namespace HotelManagementSystem.Areas.Deshboard.Controllers
             model.UserID = ID;
 
             var user = await UserManager.FindByIdAsync(ID);
-
+            model.Name = user.FullName;
             var userRoleIDs = user.Roles.Select(x => x.RoleId).ToList();
 
 

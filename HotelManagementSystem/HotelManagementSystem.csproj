@@ -197,11 +197,13 @@
     <Compile Include="Areas\Deshboard\Controllers\AccomodationsController.cs" />
     <Compile Include="Areas\Deshboard\Controllers\AccomodationTypesController.cs" />
     <Compile Include="Areas\Deshboard\Controllers\DeshboardController.cs" />
+    <Compile Include="Areas\Deshboard\Controllers\RolesController.cs" />
     <Compile Include="Areas\Deshboard\Controllers\UsersController.cs" />
     <Compile Include="Areas\Deshboard\DeshboardAreaRegistration.cs" />
     <Compile Include="Areas\Deshboard\ViewModels\AccomodationPackagesViewModels.cs" />
     <Compile Include="Areas\Deshboard\ViewModels\AccomodationsViewModels.cs" />
     <Compile Include="Areas\Deshboard\ViewModels\AccomodationTypesListingModel.cs" />
+    <Compile Include="Areas\Deshboard\ViewModels\RolesViewModels.cs" />
     <Compile Include="Areas\Deshboard\ViewModels\UsersViewModels.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -276,7 +278,11 @@
     <Content Include="Areas\Deshboard\Views\Users\_Action.cshtml" />
     <Content Include="Areas\Deshboard\Views\Users\_Delete.cshtml" />
     <Content Include="Areas\Deshboard\Views\Users\_Listing.cshtml" />
-    <Content Include="Areas\Deshboard\Views\Users\_UsresRoles.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Users\_UserRoles.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Roles\Index.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Roles\_listing.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Roles\_Action.cshtml" />
+    <Content Include="Areas\Deshboard\Views\Roles\_Delete.cshtml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -326,7 +332,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Deshboard\Models\" />
-    <Folder Include="Views\Accomodations\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

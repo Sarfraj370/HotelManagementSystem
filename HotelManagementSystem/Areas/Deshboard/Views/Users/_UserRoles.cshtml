@@ -12,7 +12,7 @@
 
             <h5 class="modal-title">
 
-                <span>User Roles</span>
+                <span>User Roles </span>
 
             </h5>
 
@@ -38,7 +38,7 @@
 
                             <th colspan="2">
 
-                                Current User Roles
+                                Assigned <span style="color:blue;">(@Model.Name)</span> user Roles provided by the admin
 
                             </th>
 
@@ -181,9 +181,10 @@
 				})
 
 				.done(function (response) {
-
-					$("#actionModal .modal-dialog").html(response);
-
+                   
+                    $("#actionModal .modal-dialog").html(response);
+                    
+                    
 				});
 
 			}
